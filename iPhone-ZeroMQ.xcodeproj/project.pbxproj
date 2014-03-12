@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E07BE5DD18D052B50042B346 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E07BE5DC18D052B50042B346 /* Foundation.framework */; };
+		E07BE5DF18D052B50042B346 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E07BE5DE18D052B50042B346 /* CoreGraphics.framework */; };
+		E07BE5E118D052B50042B346 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E07BE5E018D052B50042B346 /* UIKit.framework */; };
+		E07BE5E718D052B50042B346 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E07BE5E518D052B50042B346 /* InfoPlist.strings */; };
+		E07BE5E918D052B50042B346 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E07BE5E818D052B50042B346 /* main.m */; };
+		E07BE5ED18D052B50042B346 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E07BE5EC18D052B50042B346 /* AppDelegate.m */; };
+		E07BE5F018D052B50042B346 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E07BE5EE18D052B50042B346 /* Main.storyboard */; };
+		E07BE5F318D052B50042B346 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E07BE5F218D052B50042B346 /* ViewController.m */; };
+		E07BE5F518D052B50042B346 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E07BE5F418D052B50042B346 /* Images.xcassets */; };
+		E07BE5FC18D052B50042B346 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E07BE5FB18D052B50042B346 /* XCTest.framework */; };
+		E07BE5FD18D052B50042B346 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E07BE5DC18D052B50042B346 /* Foundation.framework */; };
+		E07BE5FE18D052B50042B346 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E07BE5E018D052B50042B346 /* UIKit.framework */; };
+		E07BE60618D052B50042B346 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E07BE60418D052B50042B346 /* InfoPlist.strings */; };
+		E07BE60818D052B50042B346 /* iPhone_ZeroMQTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E07BE60718D052B50042B346 /* iPhone_ZeroMQTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E07BE5FF18D052B50042B346 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E07BE5D118D052B50042B346 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E07BE5D818D052B50042B346;
+			remoteInfo = "iPhone-ZeroMQ";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E07BE5D918D052B50042B346 /* iPhone-ZeroMQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iPhone-ZeroMQ.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E07BE5DC18D052B50042B346 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E07BE5DE18D052B50042B346 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E07BE5E018D052B50042B346 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E07BE5E418D052B50042B346 /* iPhone-ZeroMQ-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iPhone-ZeroMQ-Info.plist"; sourceTree = "<group>"; };
+		E07BE5E618D052B50042B346 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E07BE5E818D052B50042B346 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E07BE5EA18D052B50042B346 /* iPhone-ZeroMQ-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iPhone-ZeroMQ-Prefix.pch"; sourceTree = "<group>"; };
+		E07BE5EB18D052B50042B346 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E07BE5EC18D052B50042B346 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E07BE5EF18D052B50042B346 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E07BE5F118D052B50042B346 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E07BE5F218D052B50042B346 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E07BE5F418D052B50042B346 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E07BE5FA18D052B50042B346 /* iPhone-ZeroMQTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iPhone-ZeroMQTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E07BE5FB18D052B50042B346 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		E07BE60318D052B50042B346 /* iPhone-ZeroMQTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iPhone-ZeroMQTests-Info.plist"; sourceTree = "<group>"; };
+		E07BE60518D052B50042B346 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E07BE60718D052B50042B346 /* iPhone_ZeroMQTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iPhone_ZeroMQTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E07BE5D618D052B50042B346 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E07BE5DF18D052B50042B346 /* CoreGraphics.framework in Frameworks */,
+				E07BE5E118D052B50042B346 /* UIKit.framework in Frameworks */,
+				E07BE5DD18D052B50042B346 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E07BE5F718D052B50042B346 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E07BE5FC18D052B50042B346 /* XCTest.framework in Frameworks */,
+				E07BE5FE18D052B50042B346 /* UIKit.framework in Frameworks */,
+				E07BE5FD18D052B50042B346 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E07BE5D018D052B50042B346 = {
+			isa = PBXGroup;
+			children = (
+				E07BE5E218D052B50042B346 /* iPhone-ZeroMQ */,
+				E07BE60118D052B50042B346 /* iPhone-ZeroMQTests */,
+				E07BE5DB18D052B50042B346 /* Frameworks */,
+				E07BE5DA18D052B50042B346 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E07BE5DA18D052B50042B346 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E07BE5D918D052B50042B346 /* iPhone-ZeroMQ.app */,
+				E07BE5FA18D052B50042B346 /* iPhone-ZeroMQTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E07BE5DB18D052B50042B346 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E07BE5DC18D052B50042B346 /* Foundation.framework */,
+				E07BE5DE18D052B50042B346 /* CoreGraphics.framework */,
+				E07BE5E018D052B50042B346 /* UIKit.framework */,
+				E07BE5FB18D052B50042B346 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E07BE5E218D052B50042B346 /* iPhone-ZeroMQ */ = {
+			isa = PBXGroup;
+			children = (
+				E07BE5EB18D052B50042B346 /* AppDelegate.h */,
+				E07BE5EC18D052B50042B346 /* AppDelegate.m */,
+				E07BE5EE18D052B50042B346 /* Main.storyboard */,
+				E07BE5F118D052B50042B346 /* ViewController.h */,
+				E07BE5F218D052B50042B346 /* ViewController.m */,
+				E07BE5F418D052B50042B346 /* Images.xcassets */,
+				E07BE5E318D052B50042B346 /* Supporting Files */,
+			);
+			path = "iPhone-ZeroMQ";
+			sourceTree = "<group>";
+		};
+		E07BE5E318D052B50042B346 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E07BE5E418D052B50042B346 /* iPhone-ZeroMQ-Info.plist */,
+				E07BE5E518D052B50042B346 /* InfoPlist.strings */,
+				E07BE5E818D052B50042B346 /* main.m */,
+				E07BE5EA18D052B50042B346 /* iPhone-ZeroMQ-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E07BE60118D052B50042B346 /* iPhone-ZeroMQTests */ = {
+			isa = PBXGroup;
+			children = (
+				E07BE60718D052B50042B346 /* iPhone_ZeroMQTests.m */,
+				E07BE60218D052B50042B346 /* Supporting Files */,
+			);
+			path = "iPhone-ZeroMQTests";
+			sourceTree = "<group>";
+		};
+		E07BE60218D052B50042B346 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E07BE60318D052B50042B346 /* iPhone-ZeroMQTests-Info.plist */,
+				E07BE60418D052B50042B346 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E07BE5D818D052B50042B346 /* iPhone-ZeroMQ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E07BE60B18D052B50042B346 /* Build configuration list for PBXNativeTarget "iPhone-ZeroMQ" */;
+			buildPhases = (
+				E07BE5D518D052B50042B346 /* Sources */,
+				E07BE5D618D052B50042B346 /* Frameworks */,
+				E07BE5D718D052B50042B346 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iPhone-ZeroMQ";
+			productName = "iPhone-ZeroMQ";
+			productReference = E07BE5D918D052B50042B346 /* iPhone-ZeroMQ.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E07BE5F918D052B50042B346 /* iPhone-ZeroMQTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E07BE60E18D052B50042B346 /* Build configuration list for PBXNativeTarget "iPhone-ZeroMQTests" */;
+			buildPhases = (
+				E07BE5F618D052B50042B346 /* Sources */,
+				E07BE5F718D052B50042B346 /* Frameworks */,
+				E07BE5F818D052B50042B346 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E07BE60018D052B50042B346 /* PBXTargetDependency */,
+			);
+			name = "iPhone-ZeroMQTests";
+			productName = "iPhone-ZeroMQTests";
+			productReference = E07BE5FA18D052B50042B346 /* iPhone-ZeroMQTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E07BE5D118D052B50042B346 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "David Black";
+				TargetAttributes = {
+					E07BE5F918D052B50042B346 = {
+						TestTargetID = E07BE5D818D052B50042B346;
+					};
+				};
+			};
+			buildConfigurationList = E07BE5D418D052B50042B346 /* Build configuration list for PBXProject "iPhone-ZeroMQ" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E07BE5D018D052B50042B346;
+			productRefGroup = E07BE5DA18D052B50042B346 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E07BE5D818D052B50042B346 /* iPhone-ZeroMQ */,
+				E07BE5F918D052B50042B346 /* iPhone-ZeroMQTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E07BE5D718D052B50042B346 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E07BE5F518D052B50042B346 /* Images.xcassets in Resources */,
+				E07BE5E718D052B50042B346 /* InfoPlist.strings in Resources */,
+				E07BE5F018D052B50042B346 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E07BE5F818D052B50042B346 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E07BE60618D052B50042B346 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E07BE5D518D052B50042B346 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E07BE5F318D052B50042B346 /* ViewController.m in Sources */,
+				E07BE5ED18D052B50042B346 /* AppDelegate.m in Sources */,
+				E07BE5E918D052B50042B346 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E07BE5F618D052B50042B346 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E07BE60818D052B50042B346 /* iPhone_ZeroMQTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E07BE60018D052B50042B346 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E07BE5D818D052B50042B346 /* iPhone-ZeroMQ */;
+			targetProxy = E07BE5FF18D052B50042B346 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E07BE5E518D052B50042B346 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E07BE5E618D052B50042B346 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E07BE5EE18D052B50042B346 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E07BE5EF18D052B50042B346 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E07BE60418D052B50042B346 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E07BE60518D052B50042B346 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E07BE60918D052B50042B346 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E07BE60A18D052B50042B346 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E07BE60C18D052B50042B346 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iPhone-ZeroMQ/iPhone-ZeroMQ-Prefix.pch";
+				INFOPLIST_FILE = "iPhone-ZeroMQ/iPhone-ZeroMQ-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E07BE60D18D052B50042B346 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iPhone-ZeroMQ/iPhone-ZeroMQ-Prefix.pch";
+				INFOPLIST_FILE = "iPhone-ZeroMQ/iPhone-ZeroMQ-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E07BE60F18D052B50042B346 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iPhone-ZeroMQ.app/iPhone-ZeroMQ";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iPhone-ZeroMQ/iPhone-ZeroMQ-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "iPhone-ZeroMQTests/iPhone-ZeroMQTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		E07BE61018D052B50042B346 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iPhone-ZeroMQ.app/iPhone-ZeroMQ";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iPhone-ZeroMQ/iPhone-ZeroMQ-Prefix.pch";
+				INFOPLIST_FILE = "iPhone-ZeroMQTests/iPhone-ZeroMQTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E07BE5D418D052B50042B346 /* Build configuration list for PBXProject "iPhone-ZeroMQ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E07BE60918D052B50042B346 /* Debug */,
+				E07BE60A18D052B50042B346 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E07BE60B18D052B50042B346 /* Build configuration list for PBXNativeTarget "iPhone-ZeroMQ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E07BE60C18D052B50042B346 /* Debug */,
+				E07BE60D18D052B50042B346 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E07BE60E18D052B50042B346 /* Build configuration list for PBXNativeTarget "iPhone-ZeroMQTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E07BE60F18D052B50042B346 /* Debug */,
+				E07BE61018D052B50042B346 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E07BE5D118D052B50042B346 /* Project object */;
+}
