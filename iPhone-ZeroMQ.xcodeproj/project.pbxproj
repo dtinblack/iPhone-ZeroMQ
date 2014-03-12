@@ -16,22 +16,9 @@
 		E07BE5F018D052B50042B346 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E07BE5EE18D052B50042B346 /* Main.storyboard */; };
 		E07BE5F318D052B50042B346 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E07BE5F218D052B50042B346 /* ViewController.m */; };
 		E07BE5F518D052B50042B346 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E07BE5F418D052B50042B346 /* Images.xcassets */; };
-		E07BE5FC18D052B50042B346 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E07BE5FB18D052B50042B346 /* XCTest.framework */; };
-		E07BE5FD18D052B50042B346 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E07BE5DC18D052B50042B346 /* Foundation.framework */; };
-		E07BE5FE18D052B50042B346 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E07BE5E018D052B50042B346 /* UIKit.framework */; };
-		E07BE60618D052B50042B346 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E07BE60418D052B50042B346 /* InfoPlist.strings */; };
-		E07BE60818D052B50042B346 /* iPhone_ZeroMQTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E07BE60718D052B50042B346 /* iPhone_ZeroMQTests.m */; };
+		E07BE61318D053B70042B346 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = E07BE61218D053B70042B346 /* LICENSE */; };
+		E07BE61518D053C00042B346 /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = E07BE61418D053C00042B346 /* README.markdown */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		E07BE5FF18D052B50042B346 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E07BE5D118D052B50042B346 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E07BE5D818D052B50042B346;
-			remoteInfo = "iPhone-ZeroMQ";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		E07BE5D918D052B50042B346 /* iPhone-ZeroMQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iPhone-ZeroMQ.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,11 +35,9 @@
 		E07BE5F118D052B50042B346 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		E07BE5F218D052B50042B346 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E07BE5F418D052B50042B346 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		E07BE5FA18D052B50042B346 /* iPhone-ZeroMQTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iPhone-ZeroMQTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E07BE5FB18D052B50042B346 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		E07BE60318D052B50042B346 /* iPhone-ZeroMQTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iPhone-ZeroMQTests-Info.plist"; sourceTree = "<group>"; };
-		E07BE60518D052B50042B346 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E07BE60718D052B50042B346 /* iPhone_ZeroMQTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iPhone_ZeroMQTests.m; sourceTree = "<group>"; };
+		E07BE61218D053B70042B346 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		E07BE61418D053C00042B346 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,24 +51,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E07BE5F718D052B50042B346 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E07BE5FC18D052B50042B346 /* XCTest.framework in Frameworks */,
-				E07BE5FE18D052B50042B346 /* UIKit.framework in Frameworks */,
-				E07BE5FD18D052B50042B346 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		E07BE5D018D052B50042B346 = {
 			isa = PBXGroup;
 			children = (
+				E07BE61418D053C00042B346 /* README.markdown */,
+				E07BE61218D053B70042B346 /* LICENSE */,
+				E07BE61118D053AE0042B346 /* Server */,
 				E07BE5E218D052B50042B346 /* iPhone-ZeroMQ */,
-				E07BE60118D052B50042B346 /* iPhone-ZeroMQTests */,
 				E07BE5DB18D052B50042B346 /* Frameworks */,
 				E07BE5DA18D052B50042B346 /* Products */,
 			);
@@ -93,7 +70,6 @@
 			isa = PBXGroup;
 			children = (
 				E07BE5D918D052B50042B346 /* iPhone-ZeroMQ.app */,
-				E07BE5FA18D052B50042B346 /* iPhone-ZeroMQTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -134,22 +110,11 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		E07BE60118D052B50042B346 /* iPhone-ZeroMQTests */ = {
+		E07BE61118D053AE0042B346 /* Server */ = {
 			isa = PBXGroup;
 			children = (
-				E07BE60718D052B50042B346 /* iPhone_ZeroMQTests.m */,
-				E07BE60218D052B50042B346 /* Supporting Files */,
 			);
-			path = "iPhone-ZeroMQTests";
-			sourceTree = "<group>";
-		};
-		E07BE60218D052B50042B346 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				E07BE60318D052B50042B346 /* iPhone-ZeroMQTests-Info.plist */,
-				E07BE60418D052B50042B346 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
+			path = Server;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,24 +137,6 @@
 			productReference = E07BE5D918D052B50042B346 /* iPhone-ZeroMQ.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E07BE5F918D052B50042B346 /* iPhone-ZeroMQTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E07BE60E18D052B50042B346 /* Build configuration list for PBXNativeTarget "iPhone-ZeroMQTests" */;
-			buildPhases = (
-				E07BE5F618D052B50042B346 /* Sources */,
-				E07BE5F718D052B50042B346 /* Frameworks */,
-				E07BE5F818D052B50042B346 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E07BE60018D052B50042B346 /* PBXTargetDependency */,
-			);
-			name = "iPhone-ZeroMQTests";
-			productName = "iPhone-ZeroMQTests";
-			productReference = E07BE5FA18D052B50042B346 /* iPhone-ZeroMQTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -198,11 +145,6 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "David Black";
-				TargetAttributes = {
-					E07BE5F918D052B50042B346 = {
-						TestTargetID = E07BE5D818D052B50042B346;
-					};
-				};
 			};
 			buildConfigurationList = E07BE5D418D052B50042B346 /* Build configuration list for PBXProject "iPhone-ZeroMQ" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -218,7 +160,6 @@
 			projectRoot = "";
 			targets = (
 				E07BE5D818D052B50042B346 /* iPhone-ZeroMQ */,
-				E07BE5F918D052B50042B346 /* iPhone-ZeroMQTests */,
 			);
 		};
 /* End PBXProject section */
@@ -229,16 +170,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E07BE5F518D052B50042B346 /* Images.xcassets in Resources */,
+				E07BE61518D053C00042B346 /* README.markdown in Resources */,
 				E07BE5E718D052B50042B346 /* InfoPlist.strings in Resources */,
+				E07BE61318D053B70042B346 /* LICENSE in Resources */,
 				E07BE5F018D052B50042B346 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E07BE5F818D052B50042B346 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E07BE60618D052B50042B346 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,23 +190,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E07BE5F618D052B50042B346 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E07BE60818D052B50042B346 /* iPhone_ZeroMQTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		E07BE60018D052B50042B346 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E07BE5D818D052B50042B346 /* iPhone-ZeroMQ */;
-			targetProxy = E07BE5FF18D052B50042B346 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E07BE5E518D052B50042B346 /* InfoPlist.strings */ = {
@@ -288,14 +207,6 @@
 				E07BE5EF18D052B50042B346 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		E07BE60418D052B50042B346 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E07BE60518D052B50042B346 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -397,46 +308,6 @@
 			};
 			name = Release;
 		};
-		E07BE60F18D052B50042B346 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iPhone-ZeroMQ.app/iPhone-ZeroMQ";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "iPhone-ZeroMQ/iPhone-ZeroMQ-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "iPhone-ZeroMQTests/iPhone-ZeroMQTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		E07BE61018D052B50042B346 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iPhone-ZeroMQ.app/iPhone-ZeroMQ";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "iPhone-ZeroMQ/iPhone-ZeroMQ-Prefix.pch";
-				INFOPLIST_FILE = "iPhone-ZeroMQTests/iPhone-ZeroMQTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -454,14 +325,6 @@
 			buildConfigurations = (
 				E07BE60C18D052B50042B346 /* Debug */,
 				E07BE60D18D052B50042B346 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		E07BE60E18D052B50042B346 /* Build configuration list for PBXNativeTarget "iPhone-ZeroMQTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E07BE60F18D052B50042B346 /* Debug */,
-				E07BE61018D052B50042B346 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
