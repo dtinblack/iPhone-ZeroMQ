@@ -18,6 +18,10 @@
 		E07BE5F518D052B50042B346 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E07BE5F418D052B50042B346 /* Images.xcassets */; };
 		E07BE61318D053B70042B346 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = E07BE61218D053B70042B346 /* LICENSE */; };
 		E07BE61518D053C00042B346 /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = E07BE61418D053C00042B346 /* README.markdown */; };
+		E0DCDB1418D6FD9C00F322BC /* UniversaliOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0DCDB1318D6FD9C00F322BC /* UniversaliOS.framework */; };
+		E0DCDB1D18D700E300F322BC /* ZMQContext.m in Sources */ = {isa = PBXBuildFile; fileRef = E0DCDB1718D700E300F322BC /* ZMQContext.m */; };
+		E0DCDB1E18D700E300F322BC /* ZMQException.m in Sources */ = {isa = PBXBuildFile; fileRef = E0DCDB1918D700E300F322BC /* ZMQException.m */; };
+		E0DCDB1F18D700E300F322BC /* ZMQSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = E0DCDB1C18D700E300F322BC /* ZMQSocket.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +42,15 @@
 		E07BE5FB18D052B50042B346 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		E07BE61218D053B70042B346 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		E07BE61418D053C00042B346 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
+		E0DCDB1318D6FD9C00F322BC /* UniversaliOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UniversaliOS.framework; sourceTree = "<group>"; };
+		E0DCDB1618D700E300F322BC /* ZMQContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMQContext.h; sourceTree = "<group>"; };
+		E0DCDB1718D700E300F322BC /* ZMQContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMQContext.m; sourceTree = "<group>"; };
+		E0DCDB1818D700E300F322BC /* ZMQException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMQException.h; sourceTree = "<group>"; };
+		E0DCDB1918D700E300F322BC /* ZMQException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMQException.m; sourceTree = "<group>"; };
+		E0DCDB1A18D700E300F322BC /* ZMQObjC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMQObjC.h; sourceTree = "<group>"; };
+		E0DCDB1B18D700E300F322BC /* ZMQSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMQSocket.h; sourceTree = "<group>"; };
+		E0DCDB1C18D700E300F322BC /* ZMQSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMQSocket.m; sourceTree = "<group>"; };
+		E0DCDB2018D703E500F322BC /* primenumbers.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = primenumbers.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0DCDB1418D6FD9C00F322BC /* UniversaliOS.framework in Frameworks */,
 				E07BE5DF18D052B50042B346 /* CoreGraphics.framework in Frameworks */,
 				E07BE5E118D052B50042B346 /* UIKit.framework in Frameworks */,
 				E07BE5DD18D052B50042B346 /* Foundation.framework in Frameworks */,
@@ -77,6 +91,7 @@
 		E07BE5DB18D052B50042B346 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E0DCDB1318D6FD9C00F322BC /* UniversaliOS.framework */,
 				E07BE5DC18D052B50042B346 /* Foundation.framework */,
 				E07BE5DE18D052B50042B346 /* CoreGraphics.framework */,
 				E07BE5E018D052B50042B346 /* UIKit.framework */,
@@ -102,6 +117,7 @@
 		E07BE5E318D052B50042B346 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E0DCDB1518D700E300F322BC /* objc-zmq */,
 				E07BE5E418D052B50042B346 /* iPhone-ZeroMQ-Info.plist */,
 				E07BE5E518D052B50042B346 /* InfoPlist.strings */,
 				E07BE5E818D052B50042B346 /* main.m */,
@@ -113,8 +129,23 @@
 		E07BE61118D053AE0042B346 /* Server */ = {
 			isa = PBXGroup;
 			children = (
+				E0DCDB2018D703E500F322BC /* primenumbers.js */,
 			);
 			path = Server;
+			sourceTree = "<group>";
+		};
+		E0DCDB1518D700E300F322BC /* objc-zmq */ = {
+			isa = PBXGroup;
+			children = (
+				E0DCDB1618D700E300F322BC /* ZMQContext.h */,
+				E0DCDB1718D700E300F322BC /* ZMQContext.m */,
+				E0DCDB1818D700E300F322BC /* ZMQException.h */,
+				E0DCDB1918D700E300F322BC /* ZMQException.m */,
+				E0DCDB1A18D700E300F322BC /* ZMQObjC.h */,
+				E0DCDB1B18D700E300F322BC /* ZMQSocket.h */,
+				E0DCDB1C18D700E300F322BC /* ZMQSocket.m */,
+			);
+			path = "objc-zmq";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,7 +215,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0DCDB1D18D700E300F322BC /* ZMQContext.m in Sources */,
 				E07BE5F318D052B50042B346 /* ViewController.m in Sources */,
+				E0DCDB1E18D700E300F322BC /* ZMQException.m in Sources */,
+				E0DCDB1F18D700E300F322BC /* ZMQSocket.m in Sources */,
 				E07BE5ED18D052B50042B346 /* AppDelegate.m in Sources */,
 				E07BE5E918D052B50042B346 /* main.m in Sources */,
 			);
@@ -287,9 +321,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iPhone-ZeroMQ/iPhone-ZeroMQ-Prefix.pch";
 				INFOPLIST_FILE = "iPhone-ZeroMQ/iPhone-ZeroMQ-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lstdc++",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -300,9 +342,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iPhone-ZeroMQ/iPhone-ZeroMQ-Prefix.pch";
 				INFOPLIST_FILE = "iPhone-ZeroMQ/iPhone-ZeroMQ-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lstdc++",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -327,6 +377,7 @@
 				E07BE60D18D052B50042B346 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

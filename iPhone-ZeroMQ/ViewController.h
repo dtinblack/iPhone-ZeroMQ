@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <UniversaliOS/zmq.h>
 
 @interface ViewController : UIViewController
 
