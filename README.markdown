@@ -26,11 +26,6 @@ TODO
     
     npm install zmq
     
-
-## Installation of 
-
-TODO
-
 ## Run
 
 <ol>
