@@ -2,6 +2,6 @@
 */build/*
 *xcuserdata
 *project.xcworkspace
-Server/node_modules/*
-iPhone-ZeroMQ/objc-zmq/* 
+Server/node_modules/* 
 UniversaliOS.framework
+iPhone-ZeroMQ/objc-zmq
