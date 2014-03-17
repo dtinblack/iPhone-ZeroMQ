@@ -4,7 +4,7 @@ A Nodejs based server generates prime numbers that are displayed on an app to ex
 
 # Software
  
-* Operating System : Mac OS 10.9 ( Maverick )
+* Operating System : Mac OS 10.9 ( Mavericks )
 * Node Version : v0.10.0 
 * Node Package Manager ( NPM ) : v1.2.14 
 * XCode : v5.1
@@ -21,7 +21,7 @@ TODO
 - Added the source and headers from the [Objective-C](https://github.com/jeremy-w/objc-zmq) binding and replaced the #include <zmq.h> with #include<UniversaliOS/zmq.h>  modifications and use <> headers.
 
 ## Installation of Nodejs binding for ZeroMQ
-    
+
     npm install zmq
 
 ## Run
@@ -36,5 +36,5 @@ TODO
 
 TODO
 
-Many people to thank, however a special mention to: [Pieter Hintjens](http://en.wikipedia.org/wiki/Pieter_Hintjens) and everybody else involved with [ZeroMQ](http://zeromq.org/),[Paolo Denti](http://paolodenti.blog.com/) and [Justin DeWind](http://spin.atomicobject.com/2011/12/13/building-a-universal-framework-for-ios/) for their excellent blogs about building a Universal ZeroMQ framework for iOS,[Jeremy W Sherman](https://jeremywsherman.com/) for the [Objective-C](https://github.com/jeremy-w/objc-zmq) binding, [Justin Tulloss](http://justin.harmonize.fm) for [Nodejs bindings](https://github.com/JustinTulloss/zeromq.node).
+Many people to thank, however a special mention to: [Pieter Hintjens](http://en.wikipedia.org/wiki/Pieter_Hintjens) and everybody else involved with [ZeroMQ](http://zeromq.org/),[Paolo Denti](http://paolodenti.blog.com/) and [Justin DeWind](http://spin.atomicobject.com/2011/12/13/building-a-universal-framework-for-ios/) for their excellent blogs about building a Universal ZeroMQ framework for iOS, [Jeremy W Sherman](https://jeremywsherman.com/) for the [Objective-C](https://github.com/jeremy-w/objc-zmq) binding, [Justin Tulloss](http://justin.harmonize.fm) for [Nodejs bindings](https://github.com/JustinTulloss/zeromq.node).
 
