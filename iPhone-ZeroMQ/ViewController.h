@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <UniversaliOS/zmq.h>
+#import "ZMQObjC.h"
 
 @interface ViewController : UIViewController
 

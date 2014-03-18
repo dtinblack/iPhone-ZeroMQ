@@ -22,44 +22,34 @@
  
     NSLog(@"View loaded");
  
-    ZMQContext *ctx = [[ZMQContext alloc] initWithIOThreads:1U];
+    ZMQContext *context = [[ZMQContext alloc] initWithIOThreads:1U];
  
     /* Get a socket to talk to the server */
  
-    NSLog(@"Connecting to prime number server ...");
-    static NSString *const kEndpoint = @"tcp://127.0.0.1:3000";
-    ZMQSocket *requestor = [ctx socketWithType:ZMQ_REQ];
+    ZMQSocket *subscriber = [context socketWithType:ZMQ_SUB];
  
-    BOOL didBind = [requestor connectToEndpoint:kEndpoint];
- 
-    NSLog(@"Value of Boolean %i endpoint [%@].", didBind, kEndpoint);
- 
-   if(!didBind) {
-     NSLog(@"*** Failed to bind to endpoint [%@].", kEndpoint);
+   if(![subscriber connectToEndpoint:@"tcp://127.0.0.1:2001"]) {
+  
+      NSLog(@"Error subscribing to the End Point");
+    
+      return;
    }
- 
-   static const int kMaxRequest = 10;
-   NSData *const request = [@"Hello from the iOS client" dataUsingEncoding:NSUTF8StringEncoding];
-   for (int request_nbr = 0; request_nbr < kMaxRequest; ++request_nbr) {
-  
-   NSLog(@"Sending request %d.", request_nbr);
-  [requestor sendData:request withFlags:0];
-  
-   NSData *reply = [requestor receiveDataWithFlags:0];
-   NSString *text = [[NSString alloc]
-                    initWithData:reply encoding:NSUTF8StringEncoding];
-   NSLog(@"Received reply %d: %@", request_nbr, text);
- }
- 
-  // close the socket on the server
- 
-  NSData *const close = [@"close" dataUsingEncoding:NSUTF8StringEncoding];
-  [requestor sendData:close withFlags:0];
- 
- // close the socket
- 
- [requestor close];
 
+   const char *nameSubscribed = "PRIME";
+ 
+   NSData *filterData =[NSData dataWithBytes:nameSubscribed length:strlen(nameSubscribed)];
+ 
+   [subscriber setData:filterData forOption:ZMQ_SUBSCRIBE];
+ 
+   // check that it is reading from the server by getting a value
+ 
+   NSData *msg = [subscriber receiveDataWithFlags:0];
+ 
+   const char *string = [msg bytes];
+ 
+   NSLog(@"Message received %s ", string);
+ 
+ 
  
 }
 
@@ -68,5 +58,10 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark - Table View
+
+
+
 
 @end
