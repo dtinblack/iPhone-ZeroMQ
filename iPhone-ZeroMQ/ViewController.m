@@ -23,7 +23,7 @@
     NSLog(@"View loaded");
  
     ZMQContext *context = [[ZMQContext alloc] initWithIOThreads:1U];
- 
+  
     /* Get a socket to talk to the server */
  
     ZMQSocket *subscriber = [context socketWithType:ZMQ_SUB];
