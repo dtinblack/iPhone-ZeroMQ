@@ -12,4 +12,6 @@
 
 @interface ViewController : UIViewController
 
+@property(weak,nonatomic) IBOutlet UILabel *textLabel;
+
 @end

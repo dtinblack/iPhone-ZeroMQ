@@ -15,6 +15,8 @@
 
 @implementation ViewController
 
+@synthesize textLabel;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -22,9 +24,11 @@
  
     NSLog(@"View loaded");
  
+ /*
+ 
     ZMQContext *context = [[ZMQContext alloc] initWithIOThreads:1U];
   
-    /* Get a socket to talk to the server */
+    // Get a socket to talk to the server
  
     ZMQSocket *subscriber = [context socketWithType:ZMQ_SUB];
  
@@ -40,8 +44,11 @@
    NSData *filterData =[NSData dataWithBytes:nameSubscribed length:strlen(nameSubscribed)];
  
    [subscriber setData:filterData forOption:ZMQ_SUBSCRIBE];
+*/
  
    // check that it is reading from the server by getting a value
+ 
+/*
  
    NSData *msg = [subscriber receiveDataWithFlags:0];
  
@@ -49,7 +56,11 @@
  
    NSLog(@"Message received %s ", string);
  
+*/
  
+ // check that the view is working by outputting a message.
+ 
+ textLabel.text = @"Hello Prime Number";
  
 }
 
