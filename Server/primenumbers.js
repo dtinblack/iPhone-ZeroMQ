@@ -26,7 +26,7 @@ socket.bind('tcp://127.0.0.1:2001', function(error) {
             
             // Prime Number calculations
             
-            while ( prime < 20000 ) {
+            while ( prime < 200000 ) {
             
             for ( var i = 1; i <= prime; i++ ) {
             

@@ -14,65 +14,72 @@
 - (void)connectToServer{
  
 
+ NSLog( @"delegate on main thread: %@",
+       [[NSThread currentThread] isMainThread] ? @"YES" : @"NO" );
+
  // Setup the context for Server
  
-//  ZMQContext *context = [[ZMQContext alloc] initWithIOThreads:1U];
+  ZMQContext *context = [[ZMQContext alloc] initWithIOThreads:1U];
  
  // Setup subscriber to the Server
  
-//  ZMQSocket *subscriber = [context socketWithType:ZMQ_SUB];
+  ZMQSocket *subscriber = [context socketWithType:ZMQ_SUB];
  
-//if(![subscriber connectToEndpoint:@"tcp://127.0.0.1:2001"]) {
+if(![subscriber connectToEndpoint:@"tcp://127.0.0.1:2001"]) {
   
-//    NSLog(@"Error subscribing to the end point");
+    NSLog(@"Error subscribing to the end point");
   
-//    return;
+    return;
   
-// }
+}
 
  
  // Setup label for pub/sub
  
  
-/*
+
   const char *nameSubscribed = "PRIME";
  
   NSData *filterData = [NSData dataWithBytes:nameSubscribed length:strlen(nameSubscribed)];
  
   [subscriber setData:filterData forOption:ZMQ_SUBSCRIBE];
  
+ int count = 0;
+ 
+ while(TRUE) {
+  
+  count++;
+ 
+ 
+   [delegate getMessage:[NSString stringWithFormat:@"msg from server %i", count]];
+  
+//  [delegate getMessage:[[subscriber receiveDataWithFlags:0] bytes]];
+  
+  
+ }
  
 
-  NSData *msg = [subscriber receiveDataWithFlags:0];
+//  NSData *msg = [subscriber receiveDataWithFlags:0];
  
-  const char *string = [msg bytes];
+//  const char *string = [msg bytes];
  
+
+
+//while(TRUE) {
  
-// while(TRUE) {
+//  NSLog(@"Message received %s", [[subscriber receiveDataWithFlags:0] bytes]);
  
-  NSLog(@"Message received %s", [[subscriber receiveDataWithFlags:0] bytes]);
+// [delegate getMessage:[[subscriber receiveDataWithFlags:0] bytes]];
  
-*/
+
  
  // call the getMessage
  
 
  
-//  [delegate performSelector:@selector(msgEvent)];
- 
 
  
-    NSLog(@"ZMQServer object created");
 
- 
- for (int i = 0; i < 15; i++) {
-  
-    [NSThread sleepForTimeInterval:2];
- 
-    [self.delegate getMessage:[NSString stringWithFormat:@"Sending %i'th message", i]];
-  
-
- }
  
 }
 
