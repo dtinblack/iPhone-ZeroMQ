@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <UniversaliOS/zmq.h>
-#import "ZMQObjC.h"
+#import "ZMQServer.h"
 
-@interface ViewController : UIViewController
-
+@interface ViewController : UIViewController <ZMQServerDelegate>
+ 
 @property(weak,nonatomic) IBOutlet UILabel *textLabel;
+@property(strong, nonatomic) ZMQServer *myServer;
 
 @end

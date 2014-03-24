@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "ZMQObjC.h"
+#import "ZMQServer.h"
 
 @interface ViewController ()
 
@@ -16,51 +16,32 @@
 @implementation ViewController
 
 @synthesize textLabel;
+@synthesize myServer;
+
+-(void) updateDisplay:(NSString *)str
+{
+ //self.textLabel.text = str;
+ //[self.textLabel setNeedsDisplay];
+ 
+  NSLog(@"Call to updateDisplay");
+ 
+ [self.textLabel performSelectorOnMainThread : @ selector(setText : ) withObject:str waitUntilDone:YES];
+
+}
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
- 
-    NSLog(@"View loaded");
- 
- /*
- 
-    ZMQContext *context = [[ZMQContext alloc] initWithIOThreads:1U];
-  
-    // Get a socket to talk to the server
- 
-    ZMQSocket *subscriber = [context socketWithType:ZMQ_SUB];
- 
-   if(![subscriber connectToEndpoint:@"tcp://127.0.0.1:2001"]) {
-  
-      NSLog(@"Error subscribing to the End Point");
-    
-      return;
-   }
 
-   const char *nameSubscribed = "PRIME";
+    [super viewDidLoad];
  
-   NSData *filterData =[NSData dataWithBytes:nameSubscribed length:strlen(nameSubscribed)];
+    myServer = [[ZMQServer alloc]init];
  
-   [subscriber setData:filterData forOption:ZMQ_SUBSCRIBE];
-*/
+    myServer.delegate = self;
  
-   // check that it is reading from the server by getting a value
+    [myServer connectToServer];
  
-/*
+
  
-   NSData *msg = [subscriber receiveDataWithFlags:0];
- 
-   const char *string = [msg bytes];
- 
-   NSLog(@"Message received %s ", string);
- 
-*/
- 
- // check that the view is working by outputting a message.
- 
- textLabel.text = @"Hello Prime Number";
  
 }
 
@@ -70,7 +51,16 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Table View
+#pragma mark - ZMQServer getMessage
+
+- (void) getMessage:(NSString *)msg{
+ 
+   NSLog(@"Message sent to label: %@", msg);
+ 
+  [self updateDisplay:msg];
+ 
+ 
+}
 
 
 
