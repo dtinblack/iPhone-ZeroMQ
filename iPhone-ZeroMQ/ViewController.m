@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "ZMQServer.h"
+
 
 @interface ViewController ()
 
@@ -16,7 +16,8 @@
 @implementation ViewController
 
 @synthesize textLabel;
-@synthesize myServer;
+
+/*
 
 -(void) updateDisplay:(NSString *)str
 {
@@ -28,16 +29,50 @@
  [self.textLabel performSelectorOnMainThread : @ selector(setText : ) withObject:str waitUntilDone:YES];
 
 }
+ 
+*/
 
 - (void)viewDidLoad
 {
  
 
- NSLog(@"Program started ... ");
+  NSLog(@"View Loaded... ");
+ 
+  self.textLabel.text = @"Hello World";
+ 
+  ZMQContext *ctx = [[ZMQContext alloc] initWithIOThreads:1U];
+ 
+ 
+ // Experiment with Block Programming
+ 
+ NSLog( @"main thread: %@",
+       [[NSThread currentThread] isMainThread] ? @"YES" : @"NO" );
+ 
+ dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+  
+
+  
+  NSLog( @"dispatch_async thread: %@",
+        [[NSThread currentThread] isMainThread] ? @"NO": @"YES" );
+  
+  NSLog(@"Done doing something long and involved");
+  
+  
+  dispatch_async(dispatch_get_main_queue(), ^{
+   
+   NSLog( @"main thread: %@",
+         [[NSThread currentThread] isMainThread] ? @"YES" : @"NO" );
+ 
+   
+   self.textLabel.text = @"Done something";
+  });
+ });
+ 
+ 
+
+ /*
  
  ZMQContext *ctx = [[ZMQContext alloc] initWithIOThreads:1U];
- 
- /* Get a socket to talk to clients */
  
  NSLog(@"Connecting to hello world server ...");
  static NSString *const kEndpoint = @"tcp://127.0.0.1:3000";
@@ -72,41 +107,10 @@
  
  [requestor close];
 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-/*
- 
- myServer = [[ZMQServer alloc]init];
- 
-    myServer.delegate = self;
-
- 
- // create a thread to get the information from the server
- 
-    dispatch_async(dispatch_get_global_queue(0, 0), ^{
- 
-     [myServer connectToServer];
-  
-    });
- */
- 
-
-
- 
+*/
  
  
  [super viewDidLoad];
-
- 
  
 }
 
@@ -115,19 +119,5 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-#pragma mark - ZMQServer getMessage
-
-- (void) getMessage:(NSString *)msg{
- 
-   NSLog(@"Message sent to label: %@", msg);
- 
-  [self updateDisplay:msg];
- 
- 
-}
-
-
-
 
 @end

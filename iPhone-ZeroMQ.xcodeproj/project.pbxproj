@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E061E3E318D988B300CF6AEC /* ZMQServer.m in Sources */ = {isa = PBXBuildFile; fileRef = E061E3E218D988B300CF6AEC /* ZMQServer.m */; };
-		E076866118E0CA1A000FAB87 /* helloworld.js in Sources */ = {isa = PBXBuildFile; fileRef = E076866018E0CA1A000FAB87 /* helloworld.js */; };
 		E07BE5DD18D052B50042B346 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E07BE5DC18D052B50042B346 /* Foundation.framework */; };
 		E07BE5DF18D052B50042B346 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E07BE5DE18D052B50042B346 /* CoreGraphics.framework */; };
 		E07BE5E118D052B50042B346 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E07BE5E018D052B50042B346 /* UIKit.framework */; };
@@ -27,8 +25,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E061E3E118D988B300CF6AEC /* ZMQServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMQServer.h; sourceTree = "<group>"; };
-		E061E3E218D988B300CF6AEC /* ZMQServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMQServer.m; sourceTree = "<group>"; };
 		E076866018E0CA1A000FAB87 /* helloworld.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = helloworld.js; sourceTree = "<group>"; };
 		E07BE5D918D052B50042B346 /* iPhone-ZeroMQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iPhone-ZeroMQ.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E07BE5DC18D052B50042B346 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -115,8 +111,6 @@
 				E07BE5F218D052B50042B346 /* ViewController.m */,
 				E07BE5F418D052B50042B346 /* Images.xcassets */,
 				E07BE5E318D052B50042B346 /* Supporting Files */,
-				E061E3E118D988B300CF6AEC /* ZMQServer.h */,
-				E061E3E218D988B300CF6AEC /* ZMQServer.m */,
 			);
 			path = "iPhone-ZeroMQ";
 			sourceTree = "<group>";
@@ -224,10 +218,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0DCDB2A18D7629000F322BC /* ZMQContext.m in Sources */,
-				E061E3E318D988B300CF6AEC /* ZMQServer.m in Sources */,
 				E07BE5F318D052B50042B346 /* ViewController.m in Sources */,
 				E0DCDB2B18D7629000F322BC /* ZMQException.m in Sources */,
-				E076866118E0CA1A000FAB87 /* helloworld.js in Sources */,
 				E0DCDB2C18D7629000F322BC /* ZMQSocket.m in Sources */,
 				E07BE5ED18D052B50042B346 /* AppDelegate.m in Sources */,
 				E07BE5E918D052B50042B346 /* main.m in Sources */,
