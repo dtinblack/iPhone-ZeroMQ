@@ -25,7 +25,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E076866018E0CA1A000FAB87 /* helloworld.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = helloworld.js; sourceTree = "<group>"; };
 		E07BE5D918D052B50042B346 /* iPhone-ZeroMQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iPhone-ZeroMQ.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E07BE5DC18D052B50042B346 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E07BE5DE18D052B50042B346 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -130,7 +129,6 @@
 		E07BE61118D053AE0042B346 /* Server */ = {
 			isa = PBXGroup;
 			children = (
-				E076866018E0CA1A000FAB87 /* helloworld.js */,
 				E0DCDB2018D703E500F322BC /* primenumbers.js */,
 			);
 			path = Server;

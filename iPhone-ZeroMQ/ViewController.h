@@ -7,11 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <UniversaliOS/zmq.h>
+#import "ZMQObjC.h"
 
 @interface ViewController : UIViewController 
  
 @property(weak,nonatomic) IBOutlet UILabel *textLabel;
+
+-(NSInteger)convertStringToInteger:(const char *)num;
 
 
 @end

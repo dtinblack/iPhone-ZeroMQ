@@ -51,7 +51,10 @@ socket.bind('tcp://127.0.0.1:2001', function(error) {
             if( mod( number, 1000 ) == 0 ) { // publish every 1000'th prime
             
             console.log('sending prime: ' + primes[prime]);
-            socket.send('PRIME' + '   ' + primes[prime]);        
+
+            socket.send('PRIME' + '   ' + primes[prime]);
+            
+ 
             }
             
             number++;
